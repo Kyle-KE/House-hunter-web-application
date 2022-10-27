@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Hostel Registration </title>
+        <link rel="stylesheet" type="text/css" href="hostel_registration_styles.css">
+        <script src="https://kit.fontawesome.com/20406a39ff.js" crossorigin="anonymous"> </script>
+    </head>
+    <body>
+        <div class="registrationForm">
+            <img src="home.png" alt="login icon" class="icon">
+            <h2>Hostel Registration</h2>
+            <form>
+                <div class="float-sectionA">
+                    <input type="text" placeholder="Hostel Name">
+                    <input type="text" placeholder="Location">
+                    <input type="text" placeholder="Postal address">
+                    <input type="text" placeholder="Landlord Name">
+                    <input type="text" placeholder="Caretaker name (Optional)">
+                </div>
+
+                <div class="float-sectionB">
+                    <input type="tel" placeholder="Phone Number (Landlord)">
+                    <input type="tel" placeholder="Phone Number (Caretaker)">
+                    <input type="email" placeholder="Email address">
+                    <input type="number" placeholder="Rent">
+                    <input type="number" placeholder="Deposit amount">
+                </div>
+
+                <select name="Apartments">
+                    <option value="" disabled selected hidden>Choose type of Apartment</option>
+                    <option value="bedsitter">Bedsitter</option>
+                    <option value="one bedroom">One Bedroom</option>
+                    <option value="two bedroom">Two Bedroom</option>
+                    <option value="three bedroom">Three Bedroom</option>
+                </select>
+
+                <h1>Amenities and services (Pick all that is available)</h1>
+                <label class="services">CCTV Surveillance
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                    <label class="services">Wi-Fi
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label> 
+                    <label class="services">Restaurant
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="services">Cleaning Services
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="services">Laundry Services
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="services">Gym
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="services">Entertainment lounge
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="services">Parking
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="services">DSTV
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="services">Parking
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <div class="description">
+                        <textarea name="description" form="RegistrationForm" placeholder="Extra description..."></textarea>
+                    </div>
+                    
+                    <div class="gallery">
+                        <button type="button" class = "btn-upload">
+                            <i class="fa fa-upload"></i>Upload Images
+                            <input type="file">
+                        </button>
+                    </div>
+                    <input type="submit" name="" value="Submit">
+                </div>
+            </form>
+    </body>
+</html>
