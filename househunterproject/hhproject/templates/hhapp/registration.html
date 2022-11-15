@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" type = "text/css" href="{% static 'css/styleR.css' %}">
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+        <script src="https://kit.fontawesome.com/20406a39ff.js" crossorigin="anonymous"></script>
+    </head>
+    <body background="{% static 'images/city.jpg' %}">
+        <div class="registerArea">
+            <img src="{% static 'images/clipboard.png' %}" alt="login icon" class="icon">
+            <h2>Register</h2>
+            <form>
+                <input type="text" placeholder=" Username" name="username" >
+                <input type="password" placeholder=" Password" name="password">
+                <input type="text" placeholder=" Email or phone">
+                <input type="submit" name="" value="Register">
+                <div class="register">
+                    <a href="login.html"> Already have an account? Login </a>
+                </div>  
+            </form>
+        </div>
+    </body>
+</html>

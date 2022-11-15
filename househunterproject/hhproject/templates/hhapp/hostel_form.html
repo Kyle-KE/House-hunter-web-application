@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/hform.css' %} ">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body background="{% static 'images/city.jpg' %}">
+        {% comment %} <style> body{background: url( {% static 'images/city.jpg' %} ) no-repeat center center fixed ;}</style> {% endcomment %}
+        <div class="hero">
+            <nav>
+                <img src="{% static 'images/logo.png' %}" alt="" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Hostels</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+                <ul class="button">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html" class="reg">Register</a></li>
+                </ul>
+            </nav>
+            <form method="POST" class="post-form">
+            <div class="registrationForm">
+                <img src="{% static 'images/home.png' %}" alt="login icon" class="icon">
+                <h2>Hostel Registration</h2>
+                <form>
+                    {% csrf_token %}
+                    {{form.as_p}}
+                </form>
+            
+                <button type="submit" class="save btn btn-default">Save</button>
+            </div>
+            </form>
+            
+        </div>
+    </body>
+</html>

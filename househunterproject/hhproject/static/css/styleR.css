@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background: url(city.jpg); */
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+.registerArea{
+    width: 380px;
+    height: 600px;
+    background: #A5C0DB;
+    opacity: 0.87;
+    top: 54%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 40px;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h2 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 25px;
+    color: #1A535C;
+}
+
+.registerArea input {
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.registerArea input[type = "text"], input[type = "password"]{
+    border: none;
+    background: white;
+    outline: none;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+
+.registerArea input[type = "submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #DEA54B;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 15px;
+    width: 100%;
+    align-items: center;
+}
+
+.registerArea input[type = "submit"]:hover {
+    cursor: pointer;
+    background: #1A535C;
+}
+
+.registerArea a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: #1A535C
+}
+
+.registerArea a:hover {
+    color: #ffff;
+}
+
+.register {
+    text-align: center;
+    font-weight: bold;
+}
