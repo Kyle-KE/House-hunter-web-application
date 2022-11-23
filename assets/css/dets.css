@@ -1,39 +1,4 @@
-/*House details*/
-
-.house-title h2{
-    font-weight: 600;
-}
-.gallery{
-    display: grid;
-    grid-gap: 10px;
-    grid-template-areas: 'first first . .' 'first first . .';
-}
-.gallery div img{
-    width: 100%;
-    display: block;
-    border-radius: 10px;
-}
-.gallery-img-1{
-    grid-area: first;
-}
-.small-details{
-    margin-top: 20px;
-}
-.small-details h2{
-    font-weight: 500;
-}
-.small-details h4{
-    text-align: right;
-    font-size: 22;
-}
-.line{
-    border: 0;
-    height: 1px;
-    background:rgb(124, 121, 121);
-    width: 100%;
-    max-width: 800px;
-    margin:20px 0 50px;
-}
+/* Information card  */
 .card {
     margin-top: 50px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -234,7 +199,9 @@ html {
     align-items: center;
     justify-content: center;
   }
-  
+
+
+  /* Book Appointment Button */
   .button-submit {
     margin-top: 50px;
     min-width: 300px;
@@ -311,6 +278,10 @@ html {
       opacity: 0;
     }
   }
+
+
+
+/* Comment Section */
 .fix{
     margin-top: 900px;
     margin-left: 20px;
